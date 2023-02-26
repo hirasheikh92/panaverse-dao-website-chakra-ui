@@ -38,7 +38,7 @@ export default function WithLargeQuote() {
           concise instructions for resolving them.
         </Text>
         <Box textAlign={"center"}>
-          <Avatar src={"/student.png"} alt={"Abdullah Azhar Khan"} mb={2} />
+          <Avatar src={"/student.png"} mb={2} />
 
           <Text fontWeight={600}>Abdullah Azhar Khan</Text>
           <Text

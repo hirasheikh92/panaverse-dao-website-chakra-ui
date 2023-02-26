@@ -6,7 +6,6 @@ import {
   Heading,
   Text,
   Image,
-  useColorModeValue,
 } from "@chakra-ui/react";
 import { data } from "./database/database";
 
@@ -43,7 +42,7 @@ export default function Instructors(ins: data) {
                   px='30px'
                   fontSize='sm'
                   textAlign='center'
-                  color={useColorModeValue("gray.400", "gray.400")}
+                  color={"gray.400"}
                 >
                   {ins.text}
                 </Text>

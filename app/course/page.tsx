@@ -2,7 +2,6 @@
 
 import {
   Box,
-  Card,
   Center,
   Container,
   Flex,

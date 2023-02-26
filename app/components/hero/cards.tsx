@@ -6,7 +6,6 @@ import {
   Heading,
   Text,
   Stack,
-  useColorModeValue,
   Container,
   Flex,
 } from "@chakra-ui/react";
@@ -32,7 +31,7 @@ export default function Cards() {
                 justifyContent='space-evenly'
                 key={card.id}
                 w={"22.22%"}
-                bg={useColorModeValue("white", "gray.900")}
+                bgColor={"white"}
                 boxShadow={"dark-lg"}
                 rounded={"sm"}
                 p={5}
