@@ -7,11 +7,6 @@ import {
   Heading,
   Text,
   Image,
-  Icon,
-  IconButton,
-  createIcon,
-  IconProps,
-  useColorModeValue,
   Button,
   Link,
 } from "@chakra-ui/react";

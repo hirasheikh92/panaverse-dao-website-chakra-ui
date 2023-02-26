@@ -24,26 +24,28 @@ export default function WithLargeQuote() {
           textAlign={"center"}
           maxW={"3xl"}
         >
-          We had an incredible experience working with Chakra Templates and were
-          impressed they made such a big difference in only three weeks. Our
-          team is so grateful for the wonderful improvements they made and their
-          ability to get familiar with the product concept so quickly.
+          As a student, I have found this course to be very good to my learning
+          and professional development. One of the things I appreciate most
+          about this course is the relevance of the material to my field of
+          study. The course content is directly applicable to my career goals
+          and has given me with a solid foundation of knowledge and skills. The
+          difficulty of the course was challenging but not overwhelming, it has
+          pushed me to learn new skills and think critically. The workload was
+          well-balanced, and I felt that the assignments were challenging but
+          achievable.The quality of instruction was excellent, the instructor
+          was knowledgeable, engaging, and given clear explanations. The support
+          team was quick to respond to any issues I had and given clear and
+          concise instructions for resolving them.
         </Text>
         <Box textAlign={"center"}>
-          <Avatar
-            src={
-              "https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80"
-            }
-            alt={"Jenny Wilson"}
-            mb={2}
-          />
+          <Avatar src={"/student.png"} alt={"Abdullah Azhar Khan"} mb={2} />
 
-          <Text fontWeight={600}>Jenny Wilson</Text>
+          <Text fontWeight={600}>Abdullah Azhar Khan</Text>
           <Text
             fontSize={"sm"}
             color={useColorModeValue("gray.400", "gray.400")}
           >
-            Vice President
+            Student
           </Text>
         </Box>
       </Stack>

@@ -12,17 +12,11 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
   Image,
   Button,
 } from "@chakra-ui/react";
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, ChevronDownIcon } from "@chakra-ui/icons";
 
 import NextLink from "next/link";
 
@@ -98,10 +92,6 @@ export default function Header() {
 }
 
 const DesktopNav = () => {
-  //const linkColor = useColorModeValue("gray.600", "gray.200");
-  //const linkHoverColor = useColorModeValue("gray.800", "white");
-  //const popoverContentBgColor = useColorModeValue("white", "gray.800");
-
   return (
     <Stack direction={"row"} spacing={4}>
       {NAV_ITEMS.map((navItem) => (
@@ -148,14 +138,7 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
-    <Link
-      href={href}
-      role={"group"}
-      display={"block"}
-      p={2}
-      rounded={"md"}
-      // _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
-    >
+    <Link href={href} role={"group"} display={"block"} p={2} rounded={"md"}>
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text

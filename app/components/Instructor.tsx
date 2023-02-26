@@ -6,6 +6,7 @@ import {
   Heading,
   Text,
   Image,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { data } from "./database/database";
 
@@ -18,8 +19,8 @@ interface data {
 export default function Instructors(ins: data) {
   return (
     <>
-      <Box>
-        <Container maxW={1400}>
+      <Box bgColor={"#F7FAFC"}>
+        <Container maxW={1400} p={6}>
           <Center>
             <Heading>Our Instructors</Heading>
           </Center>
@@ -32,12 +33,18 @@ export default function Instructors(ins: data) {
                     width={90}
                     height={90}
                     src={ins.src}
+                    alt={"panaverse-img"}
                   />
                 </Center>
                 <Heading textAlign='center' size='md'>
                   {ins.heading}
                 </Heading>
-                <Text px='30px' fontSize='sm' textAlign='center'>
+                <Text
+                  px='30px'
+                  fontSize='sm'
+                  textAlign='center'
+                  color={useColorModeValue("gray.400", "gray.400")}
+                >
                   {ins.text}
                 </Text>
               </Box>

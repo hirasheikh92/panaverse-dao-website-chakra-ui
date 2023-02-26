@@ -7,8 +7,6 @@ import {
   Container,
   Flex,
   Heading,
-  HStack,
-  Link,
   Stack,
   Text,
 } from "@chakra-ui/react";
@@ -116,102 +114,104 @@ const Course = () => {
             </Center>
           </RevealWrapper>
         </Container>
-        <Container maxW={"7xl"}>
-          {cards.map((elem) => (
-            <Box
-              key={elem.id}
-              display={"flex"}
-              flexDirection={"column"}
-              justifyContent={"center"}
-              alignItems={"center"}
-            >
-              <Stack
-                mt={6}
-                flex={1}
+        <Box bgColor={"#F7FAFC"} w={"100%"}>
+          <Container maxW={"7xl"}>
+            {cards.map((elem) => (
+              <Box
+                key={elem.id}
+                display={"flex"}
+                flexDirection={"column"}
                 justifyContent={"center"}
-                spacing={{ base: 5, md: 10 }}
+                alignItems={"center"}
               >
-                <Center>
-                  <Heading
-                    lineHeight={1.1}
-                    fontWeight={600}
-                    fontSize={{ base: "xl", sm: "2xl", lg: "4xl" }}
-                    mt={6}
-                    textAlign={"center"}
-                  >
-                    <Text
-                      as={"span"}
-                      position={"relative"}
-                      _after={{
-                        content: "''",
-                        width: "full",
-                        height: "30%",
-                        position: "absolute",
-                        bottom: 1,
-                        left: 0,
-                        bg: "red.400",
-                        zIndex: -1,
-                      }}
+                <Stack
+                  mt={6}
+                  flex={1}
+                  justifyContent={"center"}
+                  spacing={{ base: 5, md: 10 }}
+                >
+                  <Center>
+                    <Heading
+                      lineHeight={1.1}
+                      fontWeight={600}
+                      fontSize={{ base: "xl", sm: "2xl", lg: "4xl" }}
+                      mt={6}
+                      textAlign={"center"}
                     >
-                      {elem.heading1}
+                      <Text
+                        as={"span"}
+                        position={"relative"}
+                        _after={{
+                          content: "''",
+                          width: "full",
+                          height: "30%",
+                          position: "absolute",
+                          bottom: 1,
+                          left: 0,
+                          bg: "red.400",
+                          zIndex: -1,
+                        }}
+                      >
+                        {elem.heading1}
+                      </Text>
+                      <br />
+                    </Heading>
+                  </Center>
+
+                  <Center>
+                    {" "}
+                    <Text color={"gray.500"} align={"center"} mb={5}>
+                      {elem.text1}
                     </Text>
-                    <br />
-                  </Heading>
-                </Center>
+                  </Center>
+                </Stack>
 
-                <Center>
-                  {" "}
-                  <Text color={"gray.500"} align={"center"} mb={5}>
-                    {elem.text1}
-                  </Text>
-                </Center>
-              </Stack>
-
-              <RevealWrapper
-                origin='right'
-                delay={200}
-                duration={1000}
-                distance='500px'
-                reset={true}
-              >
-                <Center>
-                  <Flex mt='30px' gap='20px'>
-                    <Box
-                      bgColor='white'
-                      textAlign='center'
-                      p='50px'
-                      boxShadow='dark-lg'
-                      borderRadius='20px'
-                      width='350px'
-                    >
-                      <Heading as={"span"} textColor={"red.400"}>
-                        {elem.heading2}
-                      </Heading>
-                      <Text fontWeight='medium' pt='5px'>
-                        {elem.text2}
-                      </Text>
-                    </Box>
-                    <Box
-                      bgColor='white'
-                      textAlign='center'
-                      p='50px'
-                      boxShadow='dark-lg'
-                      borderRadius='20px'
-                      width='350px'
-                    >
-                      <Heading as={"span"} textColor={"red.400"}>
-                        {elem.heading3}
-                      </Heading>
-                      <Text fontWeight='medium' pt='5px'>
-                        {elem.text3}
-                      </Text>
-                    </Box>
-                  </Flex>
-                </Center>
-              </RevealWrapper>
-            </Box>
-          ))}
-        </Container>
+                <RevealWrapper
+                  origin='right'
+                  delay={200}
+                  duration={1000}
+                  distance='500px'
+                  reset={true}
+                >
+                  <Center>
+                    <Flex mt='30px' gap='20px'>
+                      <Box
+                        bgColor='white'
+                        textAlign='center'
+                        p='50px'
+                        boxShadow='dark-lg'
+                        borderRadius='20px'
+                        width='350px'
+                      >
+                        <Heading as={"span"} textColor={"red.400"}>
+                          {elem.heading2}
+                        </Heading>
+                        <Text fontWeight='medium' pt='5px'>
+                          {elem.text2}
+                        </Text>
+                      </Box>
+                      <Box
+                        bgColor='white'
+                        textAlign='center'
+                        p='50px'
+                        boxShadow='dark-lg'
+                        borderRadius='20px'
+                        width='350px'
+                      >
+                        <Heading as={"span"} textColor={"red.400"}>
+                          {elem.heading3}
+                        </Heading>
+                        <Text fontWeight='medium' pt='5px'>
+                          {elem.text3}
+                        </Text>
+                      </Box>
+                    </Flex>
+                  </Center>
+                </RevealWrapper>
+              </Box>
+            ))}
+          </Container>
+        </Box>
       </Box>
     </>
   );

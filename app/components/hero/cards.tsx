@@ -1,20 +1,17 @@
 "use client";
-import Image from "next/image";
+
 import {
   Box,
   Center,
   Heading,
   Text,
   Stack,
-  Button,
   useColorModeValue,
   Container,
   Flex,
-  VStack,
 } from "@chakra-ui/react";
-import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { cardData } from "../database/cardData";
-import { wrap } from "module";
+
 import { RevealWrapper } from "next-reveal";
 
 export default function Cards() {
